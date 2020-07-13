@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity{
         mapFragment.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(GoogleMap googleMap) {
+
                 map = googleMap;
                 LatLng poi_Singapore= new LatLng(1.352083,103.819839);
                 map.moveCamera(CameraUpdateFactory.newLatLngZoom(poi_Singapore, (float) 10.5));
